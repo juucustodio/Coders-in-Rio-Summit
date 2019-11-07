@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="DemoCoders.Views.MainPage">
+        <StackLayout Padding="50">
+           <Button Text="Verificar" Command="{Binding VerificarCommand}" TextColor="White" BackgroundColor="Blue" FontSize="25"/>
+
+           <Label  Text="{Binding ToggleALabel, StringFormat='Toggle A: {0}'}"
+                   HorizontalTextAlignment="Center" FontSize="25"
+                   TextColor="{Binding ToggleACor}"
+                   VerticalOptions="CenterAndExpand"/>
+
+           <Label  Text="{Binding ToggleBLabel, StringFormat='Toggle B: {0}'}"
+                   HorizontalTextAlignment="Center" FontSize="25"
+                   TextColor="{Binding ToggleBCor}"
+                   VerticalOptions="CenterAndExpand" IsVisible="{Binding ToggleA}"/>
+
+           <Button Text="AUTO POLLING"      Command="{Binding AutoCommand}"   IsVisible="{Binding ToggleA}" TextColor="White" BackgroundColor="Green" FontSize="25"/> 
+           <Button Text="MANUAL POLLING"    Command="{Binding ManualCommand}" IsVisible="{Binding ToggleA}" TextColor="White" BackgroundColor="Green" FontSize="25"/>
+           <Button Text="LAZY LOADING"      Command="{Binding LazyCommand}"   IsVisible="{Binding ToggleA}" TextColor="White" BackgroundColor="Red" FontSize="25"/>
+        </StackLayout>
+</ContentPage>

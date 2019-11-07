@@ -1,4 +1,5 @@
 ﻿using System;
+using DemoCoders.Models;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -10,7 +11,8 @@ namespace DemoCoders
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            Session.ApiKey = "2GLXCPibw5RgRK_T7XoAwQ/fsztc4-anEqp5uD23IIVUA";
+            MainPage = new Views.MainPage();
         }
 
         protected override void OnStart()
