@@ -20,6 +20,6 @@
 
            <Button Text="AUTO POLLING"      Command="{Binding AutoCommand}"   IsVisible="{Binding ToggleA}" TextColor="White" BackgroundColor="Green" FontSize="25"/> 
            <Button Text="MANUAL POLLING"    Command="{Binding ManualCommand}" IsVisible="{Binding ToggleA}" TextColor="White" BackgroundColor="Green" FontSize="25"/>
-           <Button Text="LAZY LOADING"      Command="{Binding LazyCommand}"   IsVisible="{Binding ToggleA}" TextColor="White" BackgroundColor="Red" FontSize="25"/>
+           <Button Text="LAZY POLLING"      Command="{Binding LazyCommand}"   IsVisible="{Binding ToggleA}" TextColor="White" BackgroundColor="Red" FontSize="25"/>
         </StackLayout>
 </ContentPage>
