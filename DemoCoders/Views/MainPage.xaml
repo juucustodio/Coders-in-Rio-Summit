@@ -9,7 +9,8 @@
            <Button Text="Verificar" Command="{Binding VerificarCommand}" TextColor="White" BackgroundColor="Blue" FontSize="25"/>
 
            <Label  Text="{Binding ToggleALabel, StringFormat='Toggle A: {0}'}"
-                   HorizontalTextAlignment="Center" FontSize="25"
+                   HorizontalTextAlignment="Center"
+                   FontSize="25"
                    TextColor="{Binding ToggleACor}"
                    VerticalOptions="CenterAndExpand"/>
 

@@ -134,7 +134,6 @@ namespace DemoCoders.ViewModels
             client_manual.ForceRefresh();
 
             ToggleB = client_manual.GetValue("toggleb", false);
-
         }
 
         private void ExecuteLazyCommand()

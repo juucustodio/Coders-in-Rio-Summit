@@ -13,6 +13,7 @@ namespace DemoCoders.Views
         public MainPage()
         {
             InitializeComponent();
+
             BindingContext = new MainViewModel();
         }
     }

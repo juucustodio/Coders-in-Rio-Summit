@@ -1,5 +1,4 @@
-﻿using System;
-namespace DemoCoders.Models
+﻿namespace DemoCoders.Models
 {
     public static class Session
     {

@@ -12,6 +12,7 @@ namespace DemoCoders
             InitializeComponent();
 
             Session.ApiKey = "SUA API KEY";
+
             MainPage = new Views.MainPage();
         }
 
